@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinkXStrong"
+    tools:context=".view.SigninScreenFragment">
+
+    <EditText
+        android:id="@+id/SignNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectanglelogin"
+        android:ems="10"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textColor="@color/pinkLight"
+        android:textColorHint="@color/pinkLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInText" />
+
+    <EditText
+        android:id="@+id/SignEmailText"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectanglelogin"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/pinkLight"
+        android:textColorHint="@color/pinkLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignNameText" />
+
+    <EditText
+        android:id="@+id/SignPasswordText"
+        android:layout_width="320dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectanglelogin"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/pinkLight"
+        android:textColorHint="@color/pinkLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignEmailText" />
+
+    <ImageView
+        android:id="@+id/SignLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fiicon" />
+
+    <TextView
+        android:id="@+id/SignInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Sign In"
+        android:textColor="@color/pinkLight"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignLogo" />
+
+    <ImageButton
+        android:id="@+id/SignButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignPasswordText"
+        app:srcCompat="@drawable/arrow_circle" />
+
+    <TextView
+        android:id="@+id/SignHavaAccountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="You have an accout ? Login ."
+        android:textColor="@color/pinkLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignPasswordText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout></layout>

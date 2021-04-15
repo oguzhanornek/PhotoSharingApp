@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="teknoloji.atolyesi.photosharingapp.view.LoginScreenFragment"
+        android:label="LoginScreen" >
+        <action
+            android:id="@+id/action_loginScreen_to_signinScreen"
+            app:destination="@id/signinScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="teknoloji.atolyesi.photosharingapp.view.HomePageFragment"
+        android:label="HomePage" >
+        <action
+            android:id="@+id/action_homePage_to_loginScreen"
+            app:destination="@id/loginScreen" />
+        <action
+            android:id="@+id/action_homePage_to_profilePageFragment"
+            app:destination="@id/profilePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinScreen"
+        android:name="teknoloji.atolyesi.photosharingapp.view.SigninScreenFragment"
+        android:label="SigninScreen" >
+        <action
+            android:id="@+id/action_signinScreen_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_signinScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="teknoloji.atolyesi.photosharingapp.view.ProfilePageFragment"
+        android:label="ProfilePageFragment" >
+        <action
+            android:id="@+id/action_profilePageFragment_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+</navigation>

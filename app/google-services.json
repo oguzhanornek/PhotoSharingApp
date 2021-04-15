@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1071186360844",
+    "project_id": "photosharingapp-internproject",
+    "storage_bucket": "photosharingapp-internproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071186360844:android:5e2d07e6b8acb6243ecc29",
+        "android_client_info": {
+          "package_name": "teknoloji.atolyesi.photosharingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071186360844-2soikft3101dc3tgo5p7n7qeltd7l8oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsSir1zlJWV5G85uYALwFq2AzJ7UWWsPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071186360844-2soikft3101dc3tgo5p7n7qeltd7l8oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
