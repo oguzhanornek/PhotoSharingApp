@@ -29,11 +29,11 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="30dp"
-            android:background="@mipmap/ic_launcher_round"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            android:scaleType="centerCrop"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/profileRecyclerView"
@@ -59,7 +59,7 @@
             app:layout_constraintTop_toBottomOf="@+id/profilePhoto" />
 
         <ImageButton
-            android:id="@+id/addProfileButton"
+            android:id="@+id/addProfilePhotoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@empty"
